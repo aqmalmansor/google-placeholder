@@ -10,7 +10,7 @@ import TermsOfUse from 'containers/TermsOfUse';
 
 import { history } from 'redux/store';
 
-const NavRoutes: FunctionComponent = (props) => {
+const NavRoutes: FunctionComponent = () => {
     return (
         <Router history={history}>
             <Routes>
