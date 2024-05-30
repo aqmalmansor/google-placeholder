@@ -1,0 +1,21 @@
+.homePage {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-header {
+    margin-bottom: 5px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const DeleteAccountScreen = (): JSX.Element => {
     return (
         <>
@@ -8,13 +10,26 @@ const DeleteAccountScreen = (): JSX.Element => {
             <p>If you wish to delete your data, you can do so by following the steps below:</p>
             <h2>Automated Method</h2>
             <p>Click the link below to send an automated data deletion request:</p>
-            <p><a href='mailto:finelines.dev@gmail.com?subject=Data%20deletion%20request'>Send Data Deletion Request</a></p>
+            <div style={{ gap: 3, display: 'flex ' }}>
+                <button
+                    type='button'
+                    onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = 'mailto:finelines.apple.dev2@gmail.com&subject=Delete Finelines Account';
+                    }}
+                >
+                    Send Data Deletion Request
+                </button>
+
+                or you can email us at finelines.apple.dev2@gmail.com
+            </div>
             <h2>Manual Method</h2>
             <p>Follow these steps to delete your data manually:</p>
             <ul>
                 <li>Step 1: Log in to your app.</li>
-                <li>Step 2: Go To Settings.</li>
-                <li>Step 3: Delete Account.</li>
+                <li>Step 2: Go to Profile on the bottom tab</li>
+                <li>Step 2: Go To Settings by pressing on the hamburger menu on the top left.</li>
+                <li>Step 3: Press `Delete Account` button which is located at the bottom of the screen.</li>
             </ul>
         </>
 

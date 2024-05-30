@@ -6,6 +6,7 @@ import { HistoryRouter as Router } from 'redux-first-history/rr6';
 import DeleteAccountScreen from 'containers/deleteAccount';
 import HomePage from 'containers/home';
 import PrivacyPolicyScreen from 'containers/privacy';
+import TermsOfUse from 'containers/TermsOfUse';
 
 import { history } from 'redux/store';
 
@@ -26,6 +27,11 @@ const NavRoutes: FunctionComponent = (props) => {
                 <Route
                     path='/delete-account'
                     element={<DeleteAccountScreen />}
+                />
+
+                <Route
+                    path='/terms-of-use'
+                    element={<TermsOfUse />}
                 />
 
                 <Route
